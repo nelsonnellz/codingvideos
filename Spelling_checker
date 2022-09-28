@@ -1,0 +1,16 @@
+.p.#### First run (pip install pyspellchecker) to install spelling checker Module
+
+from spellchecker import SpellChecker
+
+correct_word= SpellChecker()
+
+while True:
+    word = input("Enter a Word: ")
+
+    if word in correct_word:
+        print("word is correct!!!")
+
+    else:
+        correction = correct_word.correction(word)
+        print(" Correct Spelling is ", correction)
+
